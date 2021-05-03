@@ -2,21 +2,11 @@
 
 A Web Processing Service for the Copernicus Climate Data Store
 
-Carsten Ehbrecht, DKRZ
+Ag Stephens, CEDA
 
-OGC Member Meeting, 25 March 2021
+Climate Projection Workshop, 6 May 2021
 
 <img height="50" src="media/cc-license.png" alt="Creative Commons License"/>
----
-## Rook is a Bird
-
-<img height="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Rook_at_Slimbridge_Wetland_Centre%2C_Gloucestershire%2C_England_22May2019_arp.jpg/1280px-Rook_at_Slimbridge_Wetland_Centre%2C_Gloucestershire%2C_England_22May2019_arp.jpg" alt="Rook"/>
-
-... but that is another story
-
-```note
-bla bla
-```
 ---
 ## Rook
 
@@ -26,11 +16,8 @@ Remote Operations On Klimadaten
 
 https://rook-wps.readthedocs.io/en/latest/
 ---
-## What?
-... wait
----
-## Two days ago
-CMIP6 is now live!
+## Climate Data Store
+CMIP6 is now live in CDS ... using rook
 
 <img height="400" src="media/cds-cmip6.png" alt="CDS CMIP6"/>
 ---
@@ -42,18 +29,10 @@ CMIP6 is now live!
 
 <img height="400" src="media/cds-toolbox.png" alt="CDS download"/>
 ---
-## Climate Data Store - Data?
-
-The climate data is accessed remotely
----
-## Remote data access
-* Remote data pool for CMIP6, CMIP5, CORDEX
-* Load-balanced data servers at three sites (CEDA, IPSL, DKRZ)
-* THREDDS Data Server ... but using only file access (not OpenDAP)
----
-## Climate data is big
-* A single dataset may have several Gigabytes
-* But you just want: Temperature, 1990, Africa
+## Climate Data Store - Rook
+* The climate data is accessed remotely
+* Using rook: download only a subset of the data
+* Example: Temperature, 1990, Africa
 ---
 ## Web Processing Service
 <img height="200" src="media/wps_adamsteer.png" alt="WPS"/>
@@ -74,17 +53,30 @@ Call a function remotely
 ## Rook - Clisops
 * The Python library implementing these operators
 * Using xarray - low level library
-* Joint effort together with Ouranos
+* Joint effort together with Ouranos, Canada
 https://clisops.readthedocs.io/en/latest/
 ---
 ## Rooki
 * Python WPS client - interactive or as library
 * Using OWSLib - GeoPython
-* Joint effort with Ouranos (birdy)
+* Joint effort with Ouranos, Canada
 * https://rooki.readthedocs.io/en/latest/
 ---
 ## Rooki - Notebook
 <img height="400" src="media/rooki-demo.png" alt="Rooki Notebook"/>
+---
+## Deployment - Birdhouse Tools
+* Rook generated from a Cookiecutter template
+* Ansible playbook to roll out on cluster with Slurm scheduler
+* Joint effort with Ouranos, Canada
+---
+## Availabilty
+* Data pool is replicated at three sites
+* Load-balanced access to rook
+---
+## Rook - Requests
+200 per day ... can serve much more
+<img height="400" src="media/rook_requests.png" alt="Rook Requests"/>
 ---
 ## All together
 <img height="300" src="media/rook-4cds.png" alt="Rook for CDS"/>

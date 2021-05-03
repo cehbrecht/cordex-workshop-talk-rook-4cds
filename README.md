@@ -1,8 +1,8 @@
 # Rook 4 CDS
 
-OGC Member Meeting
-* https://portal.ogc.org/meet/
-* Thu, 25 Mar 2021, 9:00-10:30 EDT
+Copernicus Cordex Workshop (ECMWF + IPSL):
+* May 6th AND 7th, both days from 1:30PM to 4:30PM CET (Paris time zone).
+
 
 
 ## Installation
