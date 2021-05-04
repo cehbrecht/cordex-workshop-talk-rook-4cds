@@ -81,6 +81,19 @@ https://clisops.readthedocs.io/en/latest/
 ## All together
 <img height="300" src="media/rook-4cds.png" alt="Rook for CDS"/>
 ---
+## Status
+* Deployed at CEDA and DKRZ
+* Used for CMIP6
+* Subset (time, area, level) operator
+* Original CMIP6 files are downloaded from data nodes
+---
+## Next steps?
+* CMIP6 + Decadal
+* CORDEX?
+* CMIP5?
+* Averaging and Regridding
+* Other operations?
+---
 ## Projects
 * Coperniucs C3S: https://climate.copernicus.eu/
 * Roocs: https://roocs.github.io/
