@@ -70,9 +70,9 @@ https://clisops.readthedocs.io/en/latest/
 * Ansible playbook to roll out on cluster with Slurm scheduler
 * Joint effort with Ouranos, Canada
 ---
-## Availabilty
-* Data pool is replicated at three sites
-* Load-balanced access to rook
+## Availability
+* Data pool is replicated to three sites
+* Load-balanced access to rook WPS
 ---
 ## Rook - Requests
 200 per day ... can serve much more
