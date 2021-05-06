@@ -95,7 +95,7 @@ https://clisops.readthedocs.io/en/latest/
 * Other operations?
 ---
 ## Projects
-* Coperniucs C3S: https://climate.copernicus.eu/
+* Copernicus C3S: https://climate.copernicus.eu/
 * Roocs: https://roocs.github.io/
 * Birdhouse: http://bird-house.github.io/
 * GeoPython: https://geopython.github.io/
